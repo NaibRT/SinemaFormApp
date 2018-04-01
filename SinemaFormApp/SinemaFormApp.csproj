@@ -45,17 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Biletalma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Biletalma.Designer.cs">
+      <DependentUpon>Biletalma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Guest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Guest.Designer.cs">
-      <DependentUpon>Guest.cs</DependentUpon>
     </Compile>
     <Compile Include="Movie.cs">
       <SubType>Form</SubType>
@@ -63,16 +63,25 @@
     <Compile Include="Movie.Designer.cs">
       <DependentUpon>Movie.cs</DependentUpon>
     </Compile>
+    <Compile Include="seans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seans.Designer.cs">
+      <DependentUpon>seans.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Biletalma.resx">
+      <DependentUpon>Biletalma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Guest.resx">
-      <DependentUpon>Guest.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Movie.resx">
       <DependentUpon>Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seans.resx">
+      <DependentUpon>seans.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

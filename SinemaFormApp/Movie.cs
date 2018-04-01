@@ -12,61 +12,59 @@ namespace SinemaFormApp
 {
     public partial class Movie : Form
     {
-        public Button btn;
-        public int count = 10;
-        public int seatnum = 0;
-        public int left = 0;
-        public int top = 0;
+       
+      
+
         public Movie()
         {
-
             InitializeComponent();
-            this.Width = 500 + 17;
-            this.Height = 500 + 40;
+            //seans VIPSALON = new seans();
+            //seans SEVGILILERSALONU = new seans();
+            //seans ERGENSALONU = new seans();
+            //seans NARMOBILESALONU = new seans();
 
-            for (int i = 0; i < count; i++)
+            List<string> salon = new List<string>()
             {
-                left += (50 * i);
+             "1.VIPSALON",
+             "2.SEVGILILERSALONU",
+             "3.ERGENSALONU",
+             "4.NARMOBILESALONU",
+            };
+            List<string> time = new List<string>() { "12:00", "15:00", "19:00", "21:00", "23:00" };
 
-                for (int j = 0; j < count; j++)
-                {
-                    seatnum++;
-                    btn = new Button();
-                    btn.Click += new EventHandler(selectseat);
-
-                    btn.Top = top;
-                    btn.Left = left;
-                    btn.Width = 50;
-                    btn.Height = 50;
-                    btn.Text = seatnum.ToString();
-                    btn.FlatStyle = FlatStyle.Flat;
-                    btn.FlatAppearance.BorderSize = 3;
-                    btn.BackColor = Color.Red;
-                    Controls.Add(btn);
-                    left += 50;
-                }
-                top += 50;
-                left = 0;
-                count -= 2;
+            foreach (var item in salon)
+            {
+                comboBox1.Items.Add(item);
+                comboBox2.Items.Add(item);
+                comboBox3.Items.Add(item);
+                comboBox4.Items.Add(item);
+            }
+            foreach (var item in time)
+            {
+                comboBox5.Items.Add(item);
+                comboBox6.Items.Add(item);
+                comboBox7.Items.Add(item);
+                comboBox8.Items.Add(item);
             }
 
+
+
+
         }
-    
+       
+        
+            public string name;
+            public int ID;
+            
+       
 
-
-
-        //[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
-        public void selectseat(Object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
-            var btn = sender as Button;
-            if (btn.BackColor == Color.Red)
-            {
-                ((Control)sender).BackColor = Color.Gray;
-            }
-            else
-            {
-                ((Control)sender).BackColor = Color.Red;
-            }
+            var obj = new seans();
+            obj.Show();
+
         }
+
+       
     }
 }

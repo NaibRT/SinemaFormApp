@@ -10,28 +10,11 @@ using System.Windows.Forms;
 
 namespace SinemaFormApp
 {
-    public partial class Form1 : Form
+    public partial class Biletalma : Form
     {
-        public Form1()
+        public Biletalma()
         {
             InitializeComponent();
-
-
-        }
-
-        
-
-       
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            var obj = new Movie();
-            obj.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

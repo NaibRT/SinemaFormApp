@@ -3,10 +3,11 @@ C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\bin\Debug\SinemaFormApp.e
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\bin\Debug\SinemaFormApp.pdb
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.csprojResolveAssemblyReference.cache
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Form1.resources
-C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Movie.resources
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Properties.Resources.resources
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.csproj.GenerateResource.cache
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.csproj.CoreCompileInputs.cache
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.exe
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.pdb
-C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Guest.resources
+C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.hall.resources
+C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Movie.resources
+C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Biletalma.resources
