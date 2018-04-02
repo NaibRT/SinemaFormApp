@@ -13,8 +13,8 @@ namespace SinemaFormApp
       
     public partial class Movie : Form
     {
-      
-       
+
+        public static List<string> bilet = new List<string>();
 
        
       
@@ -27,16 +27,25 @@ namespace SinemaFormApp
 
             List <string> salon = new List<string>()
             {
-             "1.VIPSALON",
-             "2.SEVGILILERSALONU",
-             "3.ERGENSALONU",
-             "4.NARMOBILESALONU",
+             "VIPSALON",
+             "SEVGILILERSALONU",
+             "ERGENSALONU",
+             "NARMOBILESALONU",
             };
             List<string> time = new List<string>() { "12:00", "15:00", "19:00", "21:00", "23:00" };
+            comboBox1.SelectionChangeCommitted += new EventHandler(comboselect);
+            comboBox2.SelectionChangeCommitted += new EventHandler(comboselect);
+            comboBox3.SelectionChangeCommitted += new EventHandler(comboselect);
+            comboBox4.SelectionChangeCommitted += new EventHandler(comboselect);
+            comboBox5.SelectionChangeCommitted += new EventHandler(comboselect2);
+            comboBox6.SelectionChangeCommitted += new EventHandler(comboselect2);
+            comboBox7.SelectionChangeCommitted += new EventHandler(comboselect2);
+            comboBox8.SelectionChangeCommitted += new EventHandler(comboselect2);
+            comboBox9.SelectionChangeCommitted += new EventHandler(comboselect3);
 
             foreach (var item in salon)
             {
-                comboBox1.SelectionChangeCommitted += new EventHandler(comboselect);
+                
                 comboBox1.Items.Add(item);
                 comboBox2.Items.Add(item);
                 comboBox3.Items.Add(item);
@@ -49,9 +58,8 @@ namespace SinemaFormApp
                 comboBox7.Items.Add(item);
                 comboBox8.Items.Add(item);
             }
-
-            film film1 = new film();
             
+            film film1 = new film();
             film film2 = new film();
             film film3 = new film();
             film film4 = new film();
@@ -73,6 +81,15 @@ namespace SinemaFormApp
             label6.Text = film2.prise.ToString() + ".AZN";
             label7.Text = film3.prise.ToString() + ".AZN";
             label8.Text = film4.prise.ToString() + ".AZN";
+            seans.qiymet1 = film1.prise;
+            seans.qiymet2 = film2.prise;
+            seans.qiymet3 = film3.prise;
+            seans.qiymet4 = film4.prise;
+            List<film> filimler = new List<film>(){ film1,film2,film3,film4};
+            foreach (var item in filimler)
+            {
+                comboBox9.Items.Add(item.name);
+            }
 
 
         }
@@ -81,14 +98,30 @@ namespace SinemaFormApp
         {
             var box = obj as ComboBox;
             seans.selecteditem1 = box.SelectedItem.ToString();
+            bilet.Add("ZALIN ADI. - "+box.SelectedItem.ToString());
+
+        }
+        public void comboselect2(object obj, EventArgs e)
+        {
+            var box = obj as ComboBox;
+           bilet.Add("FILMIN SEANSI. - "+box.SelectedItem.ToString());
+
+        }
+        public void comboselect3(object obj, EventArgs e)
+        {
+            var box = obj as ComboBox;
+            seans.selectedfilm = box.SelectedItem.ToString();
+            bilet.Add("FILMIN ADI. - "+box.SelectedItem.ToString());
 
         }
 
 
 
 
+
         public void button1_Click(object sender, EventArgs e)
         {
+         
             var obj = new seans();
             obj.Show();
 
@@ -96,9 +129,9 @@ namespace SinemaFormApp
 
        
     }
-    public class film
+    public  class film
     {
         public string name;
-        public int prise;
+        public  int prise;
     }
 }

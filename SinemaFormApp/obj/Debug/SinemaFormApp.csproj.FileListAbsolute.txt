@@ -8,7 +8,6 @@ C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.c
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.csproj.CoreCompileInputs.cache
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.exe
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.pdb
-C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.hall.resources
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Movie.resources
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Biletalma.resources
 C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\bin\Debug\SinemaFormApp.exe.config
@@ -24,3 +23,4 @@ C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.csproj.Co
 C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.exe
 C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.pdb
 C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.Movie.resources
+C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.seans.resources

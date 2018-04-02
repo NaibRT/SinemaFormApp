@@ -50,6 +50,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -207,7 +208,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 49);
             this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
+            this.button1.Text = "OTURACAQ SECIN";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -251,12 +252,23 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // comboBox9
+            // 
+            this.comboBox9.BackColor = System.Drawing.Color.Tomato;
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Location = new System.Drawing.Point(235, 326);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(310, 21);
+            this.comboBox9.TabIndex = 13;
+            this.comboBox9.Text = "                                         FILM SECIN";
+            // 
             // Movie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(784, 741);
+            this.Controls.Add(this.comboBox9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox8);
             this.Controls.Add(this.comboBox4);
@@ -312,5 +324,6 @@
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox9;
     }
 }
