@@ -11,3 +11,16 @@ C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.p
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.hall.resources
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Movie.resources
 C:\Users\Naib\source\repos\SinemaFormApp\SinemaFormApp\obj\Debug\SinemaFormApp.Biletalma.resources
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\bin\Debug\SinemaFormApp.exe.config
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\bin\Debug\SinemaFormApp.exe
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\bin\Debug\SinemaFormApp.pdb
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.csprojResolveAssemblyReference.cache
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.Biletalma.resources
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.Form1.resources
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.seans.resources
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.Properties.Resources.resources
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.csproj.GenerateResource.Cache
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.csproj.CoreCompileInputs.cache
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.exe
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.pdb
+C:\Users\P106\Desktop\sinemanaib\SinemaFormApp\obj\Debug\SinemaFormApp.Movie.resources

@@ -20,25 +20,35 @@ namespace SinemaFormApp
         public int seatnum = 0;
         public int left = 0;
         public int top = 0;
+        public static string selecteditem1;
         public seans()
         {
 
             InitializeComponent();
-
-          
-            
-            
-           
-          
-
-
-            this.Width = 500 + 17;
+           this.Width = 500 + 17;
             this.Height = 500 + 40;
+            if (selecteditem1=="1.VIPSALON")
+            {
+                VIP12();
+            }
+            else if (selecteditem1 == "2.SEVGILILERSALONU")
+            {
+                VIP15();
+            }
+            else if (selecteditem1== "3.ERGENSALONU")
+            {
+                VIP17();
+            }
+            else if (selecteditem1 == "4.NARMOBILESALONU")
+            {
+                VIP21();
+            }
 
+           
 
 
         }
-    public  void VIP12()
+        public  void VIP12()
         {
             
             for (int i = 0; i <= count+2; i++)
@@ -73,7 +83,7 @@ namespace SinemaFormApp
         public void VIP15()
         {
 
-            for (int i = 0; i <= count + 2; i++)
+            for (int i = 0; i <= count; i++)
             {
                 left += (50 * i);
 
@@ -91,7 +101,7 @@ namespace SinemaFormApp
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderSize = 3;
                     btn.FlatAppearance.BorderColor = Color.White;
-                    btn.BackColor = Color.Yellow;
+                    btn.BackColor = Color.Red;
 
                     Controls.Add(btn);
                     left += 50;
@@ -101,8 +111,102 @@ namespace SinemaFormApp
                 count -= 2;
             }
         }
+        //]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+        public void VIP17()
+        {
 
+            for (int i = 0; i <= count-2; i++)
+            {
+                left += (50 * i);
 
+                for (int j = 0; j < count; j++)
+                {
+                    seatnum++;
+                    btn = new Button();
+                    btn.Click += new EventHandler(selectseat);
+
+                    btn.Top = top;
+                    btn.Left = left;
+                    btn.Width = 50;
+                    btn.Height = 50;
+                    btn.Text = seatnum.ToString();
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 3;
+                    btn.FlatAppearance.BorderColor = Color.White;
+                    btn.BackColor = Color.Red;
+
+                    Controls.Add(btn);
+                    left += 50;
+                }
+                top += 50;
+                left = 0;
+                count -= 2;
+            }
+        }
+        //]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+        public void VIP21()
+        {
+
+            for (int i = 0; i <= count /2; i++)
+            {
+                left += (50 * i);
+
+                for (int j = 0; j < count; j++)
+                {
+                    seatnum++;
+                    btn = new Button();
+                    btn.Click += new EventHandler(selectseat);
+
+                    btn.Top = top;
+                    btn.Left = left;
+                    btn.Width = 50;
+                    btn.Height = 50;
+                    btn.Text = seatnum.ToString();
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 3;
+                    btn.FlatAppearance.BorderColor = Color.White;
+                    btn.BackColor = Color.Red;
+
+                    Controls.Add(btn);
+                    left += 50;
+                }
+                top += 50;
+                left = 0;
+                count -= 2;
+            }
+        }
+        //]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+        //public void VIP23()
+        //{
+
+        //    for (int i = 0; i <= count + 2; i++)
+        //    {
+        //        left += (50 * i);
+
+        //        for (int j = 0; j < count; j++)
+        //        {
+        //            seatnum++;
+        //            btn = new Button();
+        //            btn.Click += new EventHandler(selectseat);
+
+        //            btn.Top = top;
+        //            btn.Left = left;
+        //            btn.Width = 50;
+        //            btn.Height = 50;
+        //            btn.Text = seatnum.ToString();
+        //            btn.FlatStyle = FlatStyle.Flat;
+        //            btn.FlatAppearance.BorderSize = 3;
+        //            btn.FlatAppearance.BorderColor = Color.White;
+        //            btn.BackColor = Color.Black;
+
+        //            Controls.Add(btn);
+        //            left += 50;
+        //        }
+        //        top += 50;
+        //        left = 0;
+        //        count -= 2;
+        //    }
+        //}
 
         //[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
         public void selectseat(Object sender, EventArgs e)
@@ -114,22 +218,14 @@ namespace SinemaFormApp
                 ((Control)sender).BackColor = Color.Gray;
                 
                 seats.Add(btn);
-                comboBox1.Items.Clear();
-                foreach (var item in seats)
-                {
-                    comboBox1.Items.Add(item.Text);
-                }
+              
             }
             else
             {
                 ((Control)sender).BackColor = Color.Red;
                
                 seats.Remove(btn);
-                comboBox1.Items.Clear();
-                foreach (var item in seats)
-                {
-                    comboBox1.Items.Add(item.Text);
-                }
+               
 
             }
             

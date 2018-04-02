@@ -9,21 +9,23 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SinemaFormApp
-{
+{ 
+      
     public partial class Movie : Form
     {
+      
+       
+
        
       
 
         public Movie()
         {
             InitializeComponent();
-            //seans VIPSALON = new seans();
-            //seans SEVGILILERSALONU = new seans();
-            //seans ERGENSALONU = new seans();
-            //seans NARMOBILESALONU = new seans();
+         
 
-            List<string> salon = new List<string>()
+
+            List <string> salon = new List<string>()
             {
              "1.VIPSALON",
              "2.SEVGILILERSALONU",
@@ -34,6 +36,7 @@ namespace SinemaFormApp
 
             foreach (var item in salon)
             {
+                comboBox1.SelectionChangeCommitted += new EventHandler(comboselect);
                 comboBox1.Items.Add(item);
                 comboBox2.Items.Add(item);
                 comboBox3.Items.Add(item);
@@ -47,16 +50,42 @@ namespace SinemaFormApp
                 comboBox8.Items.Add(item);
             }
 
+            film film1 = new film();
+            
+            film film2 = new film();
+            film film3 = new film();
+            film film4 = new film();
 
+
+            film1.name = "STALININ BASI";
+            film1.prise = 10;
+            film2.name = "OGLAN EVI";
+            film2.prise = 12;
+            film3.name = "BIR XALANIN SIRRI";
+            film3.prise = 11;
+            film4.name = "BEXT UZUYU 2";
+            film4.prise = 13;
+            label1.Text = film1.name;
+            label2.Text = film2.name;
+            label3.Text = film3.name;
+            label4.Text = film4.name;
+            label5.Text = film1.prise.ToString() +".AZN";
+            label6.Text = film2.prise.ToString() + ".AZN";
+            label7.Text = film3.prise.ToString() + ".AZN";
+            label8.Text = film4.prise.ToString() + ".AZN";
 
 
         }
-       
-        
-            public string name;
-            public int ID;
-            
-       
+
+        public void comboselect(object obj, EventArgs e)
+        {
+            var box = obj as ComboBox;
+            seans.selecteditem1 = box.SelectedItem.ToString();
+
+        }
+
+
+
 
         public void button1_Click(object sender, EventArgs e)
         {
@@ -66,5 +95,10 @@ namespace SinemaFormApp
         }
 
        
+    }
+    public class film
+    {
+        public string name;
+        public int prise;
     }
 }
