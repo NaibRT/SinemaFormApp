@@ -193,7 +193,7 @@ namespace SinemaFormApp
                 ((Control)sender).BackColor = Color.Gray;
                 
                 seats.Add(btn);
-                Movie.bilet.Add("OTURACAQ NOMRESI. - " + btn.Text);
+                Form1.bilet.Add("OTURACAQ NOMRESI. - " + btn.Text);
               
             }
             else
@@ -201,7 +201,7 @@ namespace SinemaFormApp
                 ((Control)sender).BackColor = Color.Red;
                
                 seats.Remove(btn);
-                Movie.bilet.Remove("OTURACAQ NOMRESI. - " + btn.Text);
+                Form1.bilet.Remove("OTURACAQ NOMRESI. - " + btn.Text);
 
 
             }
@@ -242,7 +242,7 @@ namespace SinemaFormApp
                 biletqiy = qiymet4 * qiymet;
             }
             biletqiy -= evvelkiqiymet;
-            Movie.bilet.Add("BILETIN DEYERI. - "+biletqiy.ToString()+".AZN");
+            Form1.bilet.Add("BILETIN DEYERI. - "+biletqiy.ToString()+".AZN");
             evvelkiqiymet = qiymet;
             
             obj.Show();

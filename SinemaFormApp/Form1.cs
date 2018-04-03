@@ -12,6 +12,7 @@ namespace SinemaFormApp
 {
     public partial class Form1 : Form
     {
+        public static List<string> bilet = new List<string>();
         public Form1()
         {
             InitializeComponent();

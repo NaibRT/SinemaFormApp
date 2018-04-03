@@ -27,23 +27,28 @@ namespace SinemaFormApp
             string ticket = "";
             name = textBox1.Text;
             name += "." + textBox2.Text;
-            Movie.bilet.Add("BILETIN SAHIBI. - " + name);
+            Form1.bilet.Add("BILETIN SAHIBI. - " + name);
 
-            string[] bil = new string[10];
+            string[] bil = new string[1000];
             int i = 0;
             int j = 0;
-            foreach (var item in Movie.bilet)
+            foreach (var item in Form1.bilet)
             {
                 i++;
-                bil[i] = item;
+                
                 ticket += item + "\n";
+                bil[i] = item;
 
-             }
+
+            }
+
+           
+            
+               System.IO.File.WriteAllLines(@"C:\Users\P106\Desktop\bilet.txt", bil);
 
 
-            System.IO.File.WriteAllLines(@"C:\Users\Naib\Desktop\bilet.txt", bil);
             MessageBox.Show(ticket);
-            Movie.bilet.Clear();
+            Form1.bilet.Clear();
            this.Hide();
             
             

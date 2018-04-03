@@ -14,7 +14,7 @@ namespace SinemaFormApp
     public partial class Movie : Form
     {
 
-        public static List<string> bilet = new List<string>();
+        
 
        
       
@@ -98,20 +98,20 @@ namespace SinemaFormApp
         {
             var box = obj as ComboBox;
             seans.selecteditem1 = box.SelectedItem.ToString();
-            bilet.Add("ZALIN ADI. - "+box.SelectedItem.ToString());
+            Form1.bilet.Add("ZALIN ADI. - "+box.SelectedItem.ToString());
 
         }
         public void comboselect2(object obj, EventArgs e)
         {
             var box = obj as ComboBox;
-           bilet.Add("FILMIN SEANSI. - "+box.SelectedItem.ToString());
+            Form1.bilet.Add("FILMIN SEANSI. - "+box.SelectedItem.ToString());
 
         }
         public void comboselect3(object obj, EventArgs e)
         {
             var box = obj as ComboBox;
             seans.selectedfilm = box.SelectedItem.ToString();
-            bilet.Add("FILMIN ADI. - "+box.SelectedItem.ToString());
+            Form1.bilet.Add("FILMIN ADI. - "+box.SelectedItem.ToString());
 
         }
 
